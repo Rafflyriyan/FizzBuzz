@@ -7,6 +7,9 @@ const add = (event) => {
   if (isNaN(angka1) || isNaN(angka2)) {
     alert("input abc is not number.");
     return;
+  } else if (angka1 === 0 && angka2 === 0) {
+    alert("Input tidak valid");
+    return;
   }
   fizzBuzz(angka1, angka2);
 };
